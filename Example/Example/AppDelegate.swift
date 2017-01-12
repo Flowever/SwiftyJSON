@@ -45,6 +45,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             viewController.json = JSON.null
         }
         
+        let json1 = JSON(stringLiteral: "")
+        let json2 = JSON(stringLiteral: "0")
+        
+        print(json1.boolValue, json2.boolValue)
+        
         return true
     }
 }
